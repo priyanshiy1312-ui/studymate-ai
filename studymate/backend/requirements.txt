@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+google-genai
+pypdf
+python-pptx
+faster-whisper
+yt-dlp

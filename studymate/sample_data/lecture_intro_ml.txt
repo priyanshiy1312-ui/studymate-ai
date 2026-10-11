@@ -1,0 +1,11 @@
+[00:00] Welcome to Introduction to Machine Learning. Today we cover three ideas: supervised learning, overfitting, and gradient descent.
+[00:20] Supervised learning means learning a function from labeled examples. Each example has an input, called features, and a known output, called the label.
+[00:45] If the label is a number, such as a house price, the task is regression. If the label is a category, such as spam or not spam, the task is classification.
+[01:15] We split our data into a training set and a test set. The model learns from the training set, and we measure its true quality on the test set it has never seen.
+[01:50] Now overfitting. A model overfits when it memorizes noise in the training data. Training error becomes very small but test error stays high.
+[02:25] The opposite problem is underfitting, where the model is too simple to capture the pattern, so both training and test error are high.
+[03:00] To fight overfitting we can collect more data, simplify the model, stop training early, or add regularization, which penalizes large weights.
+[03:40] Next, gradient descent. We define a loss function that measures how wrong the model is. Gradient descent adjusts the weights step by step in the direction that reduces the loss.
+[04:15] The learning rate controls the step size. If it is too large the loss can bounce around or diverge. If it is too small, training is very slow.
+[04:50] In practice we use mini-batch gradient descent, computing the gradient on a small random batch of examples each step, which is fast and works well.
+[05:25] To summarize: learn from labeled data, evaluate on held-out data, watch for overfitting, and optimize the loss with gradient descent.

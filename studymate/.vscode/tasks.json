@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "1. Backend: install", "type": "shell", "command": "pip install -r requirements.txt", "options": { "cwd": "${workspaceFolder}/backend" } },
+    { "label": "2. Backend: run", "type": "shell", "command": "uvicorn main:app --reload --port 8000", "options": { "cwd": "${workspaceFolder}/backend" }, "isBackground": true, "problemMatcher": [] },
+    { "label": "3. Load sample course", "type": "shell", "command": "python load_sample.py", "options": { "cwd": "${workspaceFolder}/sample_data" } },
+    { "label": "4. Frontend: install", "type": "shell", "command": "npm install", "options": { "cwd": "${workspaceFolder}/frontend" } },
+    { "label": "5. Frontend: run", "type": "shell", "command": "npm run dev", "options": { "cwd": "${workspaceFolder}/frontend" }, "isBackground": true, "problemMatcher": [] }
+  ]
+}
